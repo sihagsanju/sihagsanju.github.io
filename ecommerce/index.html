@@ -1,0 +1,179 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+    <link rel="icon" type="image/icon" href="image/logo.PNG">
+    <link rel="stylesheet" href="stylesheet1.css" />
+    <title>E-commerce</title>
+</head>
+
+<body>
+    <!-- main containe-->
+    <div class="main-container">
+        <!--header part-->
+        <header>
+            <!-- nav bar -->
+            <nav class="topnav" id="myTopnav">
+                <!--<a href="#"><i class="fa fa-shopping-cart" style=" font-size:25px;color:red"></i></a>-->
+                <!--<a href="index.html"><img src="image/logo.PNG" alt="image diaplay" class="logo"></a>-->
+                <a href="index.html" class="logo"><b>Eshop</b></a>
+                <a href="index.html">Home</a>
+                <a href="#template" onclick="return show('template','contact','about');">Template</a>
+                <a href="#contact" onclick="return show('contact','about','template');">Contact</a>
+                <a href="#about" onclick="return show('about','contact','template');">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <!-- hero section include image and text-->
+        <div class="slide-image">
+            <img src="./image/img.jpg" alt="Display Denim" />
+            <div class="center">
+                <div class="left"><span>Just Arived</span>
+                    <h3>Denim Jackets</h3>
+                    <p>enjoy shooping Etc.</p>
+                    <a href="login.html">Shop Now</a></div>
+            </div>
+        </div>
+        <!--section include template of immages-->
+        <div class="container">
+            <section class="resize">
+                <div class="media">
+                    <img src="./image/dress.jpg" alt="item image">
+                    <div class="text2">
+                        <h6><a href="login.html">Shop Now</a></h6>
+                    </div>
+                </div>
+            </section>
+            <section class="resize">
+                <div class="media">
+                    <img src="./image/djack.jpg" alt="Item image">
+                    <div class="text2">
+                        <h6><a href="login.html">Shop Now</a></h6>
+                    </div>
+                </div>
+            </section>
+            <section class="resize">
+                <div class="media">
+                    <img src="./image/shoes.jpg" alt="item image">
+                    <div class="text2">
+                        <h6><a href="login.html">Shop Now</a></h6>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--Info about services -->
+        <div class="container-text">
+            <section>
+                <i class="material-icons" style="font-size:44px">local_shipping</i>
+                <h3>Free Shipping and return</h3>
+                <p>Free shippint over $300</p>
+            </section>
+            <section>
+                <i class="fa fa-dollar" style="font-size:48px"></i>
+                <h3>Money Back Guarantee</h3>
+                <p>30 Days Money Back Guarantee</p>
+            </section>
+            <section>
+                <i class="fa fa-mobile-phone" style="font-size:48px"></i>
+                <h3>020-800-456-74</h3>
+                <p>24/7 Available Support</p>
+            </section>
+        </div>
+        <script>
+            /*script for navigation */
+            function show(shown, hidden, template) {
+                document.getElementById(shown).style.display = 'block';
+                document.getElementById(hidden).style.display = 'none';
+                document.getElementById(template).style.display = 'none';
+                return false;
+            }
+            /*script for responsive menu */
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <!--About section-->
+        <div id="about">
+            <h3>ONLINE SHOPPING MADE EASY AT Eshop</h3>
+            <p>
+                We have all planned our trips to the clothing store in advance, vividly dreaming about what we would buy once there. Some
+                of us even have sales assistants for friends and have often asked them for a favour or two during peak shopping
+                season (read: festivals and sales). But what we can all admit to is that we have always wished it was easier
+                than to go down to the store in dense traffic, navigating through throngs of fashionistas, all vying for
+                the same trendy clothing items, waiting in line to try on our top picks in the trial rooms, etc.
+            </p>
+        </div>
+        <!--Contact section-->
+        <div id="contact">
+            <h3>CONTACT</h3>
+            <p>Are you curious about something? As am hastily invited settled at limited civilly fortune me. Really spring
+                in extent an by. Judge but built party world. Of so am he remember although required. Bachelor unpacked be
+                advanced at. Confined in declared marianne is vicinity.</p>
+            <h3>Contact Form</h3>
+            <form>
+                Name:
+                <input type="text" name="firstname">
+                <br> Mail:
+                <input type="text" name="lastname"><br> Text:
+                <input type="text" name="lastname"><br>
+                <input type="button" value="submit" name="Submit"><br>
+            </form>
+            <br>
+        </div>
+        
+        <!--Bottom section for social links and all others links-->
+        <div class="bottom">
+            <section>
+                <h2>Keep In Touch</h2>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-pinterest"></i>
+            </section>
+            <section>
+                <h2>Shop</h2>
+                <p><a href="#">For Women</a></p>
+                <p><a href="#">For Men</a></p>
+                <p><a href="#">Our Blog</a></p>
+                <p><a href="#">Shop</a></p>
+            </section>
+            <section>
+                <h2>Company</h2>
+                <p><a href="#">Login</a></p>
+                <p><a href="#">Register</a></p>
+                <p><a href="#">Whislist</a></p>
+                <p><a href="#">Ourproducts</a></p>
+            </section>
+            <section>
+                <h2>Daily Offers & Items</h2>
+                <p>Enter mail for latest updates</p>
+                <p><input type="text" placeholder="Enter Your mail"></p>
+                <input type="button" value="submit" name="Submit">
+            </section>
+        </div>
+        <!--Footer part-->
+        <footer>
+            <address>
+                Postal Address: Door No.00, Street, City, State, Country.
+            </address>
+            Copyright © 2018 Zine EOOD. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
+
